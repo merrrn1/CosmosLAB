@@ -47,7 +47,7 @@
               class="header__image"
               src="./icons/telegramm.svg"
               alt="telegramm">
-            
+
           </a>
           <a class="header__link-number visible-mobile" href="tel:+78123363636"
             >(812) 336 36 36</a
@@ -63,21 +63,24 @@
     </header>
     <main class="main">
       <section class="grid orange">
-        <h1 class="grid__title">Grid table</h1>
-        <div class="grid__inner container">
-          <div class="grid__elem-1 white">1</div>
-          <div class="grid__elem-2 yellow">2</div>
-          <div class="grid__elem-3 red">3</div>
-          <div class="grid__elem-4 yellow">4</div>
-          <div class="grid__elem-5 white">5</div>
-          <div class="grid__elem-6 white">6</div>
-          <div class="grid__elem-7 black">7</div>
-          <div class="grid__elem-8 white">8</div>
-          <div class="grid__elem-9 white">9</div>
+        <div class="container">
+          <h1 class="grid__title">Grid table</h1>
+          <div class="grid__inner">
+            <div class="grid__elem-1 white">1</div>
+            <div class="grid__elem-2 yellow">2</div>
+            <div class="grid__elem-3 red">3</div>
+            <div class="grid__elem-4 yellow">4</div>
+            <div class="grid__elem-5 white">5</div>
+            <div class="grid__elem-6 white">6</div>
+            <div class="grid__elem-7 black">7</div>
+            <div class="grid__elem-8 white">8</div>
+            <div class="grid__elem-9 white">9</div>
+          </div>
         </div>
       </section>
+
       <section class="grafics">
-        <div class="grafics__inner">
+        <div class="grafics__inner container">
           <div class="grafics__header">
             <h2 class="grafics__title">Grid grafics</h2>
             <nav class="grafics__navigation">
@@ -100,42 +103,42 @@
                 src="./images/grid/1.png"
                 alt="grafic1"
                 class="grafics__image">
-              
+
             </div>
             <div class="grafics__elem-2">
               <img
                 src="./images/grid/2.png"
                 alt="grafic2"
                 class="grafics__image">
-              
+
             </div>
             <div class="grafics__elem-3">
               <img
                 src="./images/grid/3.png"
                 alt="grafic3"
                 class="grafics__image">
-              
+
             </div>
             <div class="grafics__elem-4">
               <img
                 src="./images/grid/4.png"
                 alt="grafic4"
                 class="grafics__image">
-              
+
             </div>
             <div class="grafics__elem-5">
               <img
                 src="./images/grid/5.png"
                 alt="grafic5"
                 class="grafics__image">
-              
+
             </div>
             <div class="grafics__elem-6">
               <img
                 src="./images/grid/6.png"
                 alt="grafic6"
                 class="grafics__image">
-              
+
             </div>
           </div>
         </div>
@@ -167,7 +170,7 @@
           <source
             srcset="./images/footer-big.png"
             media="(min-width: 1281px)">
-          
+
           <img class="footer__image-map" src="./images/footer.png" alt="map">
         </picture>
 
@@ -177,7 +180,7 @@
               class="footer__image-locator"
               src="./icons/locator.svg"
               alt="locator">
-            
+
             <p class="footer__info">Екатеринбург, ул.Маршала Жукова, дом 12</p>
           </div>
           <ul class="footer__list">
@@ -213,7 +216,7 @@
                   class="contacts__image"
                   src="./icons/watsup.svg"
                   alt="watsap">
-                
+
               </a>
             </li>
             <li class="contacts__contact">
@@ -222,7 +225,7 @@
                   class="contacts__image"
                   src="./icons/telegramm.svg"
                   alt="telegramm">
-                
+
               </a>
             </li>
             <li class="contacts__contact">
@@ -236,14 +239,15 @@
           <div class="footer__newsletter newsletter">
             <h3 class="newsletter__title">Подписаться на рассылку</h3>
             <form class="newsletter__form">
-              <label class="newsletter__label"></label>
+              <label for="email" class="newsletter__label"></label>
               <input
+                id="email"
                 class="newsletter__input"
                 type="email"
                 name="email"
                 placeholder="Электронная почта"
                 required>
-              
+
               <button class="newsletter__button" type="submit">
                 Подписаться
               </button>
@@ -252,7 +256,7 @@
           <div class="footer__link-policy">
             <a class="footer__link-policy-link" href="#"
               >Политика конфидециальности</a>
-            
+
           </div>
         </div>
       </div>

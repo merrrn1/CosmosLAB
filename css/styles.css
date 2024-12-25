@@ -2206,7 +2206,19 @@ body {
   min-width: 200px;
   border-radius: 40px;
   padding: 20px 30px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
 }
+.form__button:hover {
+  background-color: var(--color-blue-alternetive);
+}
+.form__button:active {
+  background-color: var(--color-blue-alternetive);
+}
+.form__button:focus {
+  background-color: var(--color-blue);
+}
+
 .form__label {
   font-weight: 500;
   font-size: 16px;
