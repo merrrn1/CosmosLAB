@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
       <div class="header__inner container">
         <a class="header__link" href="./index.html">
-          <img class="header__image" src="./icons/logo.svg" alt="logo">
-          <img class="header__image" src="./icons/Celestia.svg" alt="logo">
+          <img class="header__image" src="./icons/logo.svg" alt="logo" />
+          <img class="header__image" src="./icons/Celestia.svg" alt="logo" />
         </a>
         <nav class="header__navigation visible-desktop-above">
           <ul class="header__list">
@@ -40,14 +40,14 @@
         </nav>
         <div class="header__socials">
           <a class="header__link" href="#">
-            <img class="header__image" src="./icons/watsup.svg" alt="watsap">
+            <img class="header__image" src="./icons/watsup.svg" alt="watsap" />
           </a>
           <a class="header__link" href="#">
             <img
               class="header__image"
               src="./icons/telegramm.svg"
-              alt="telegramm">
-
+              alt="telegramm"
+            />
           </a>
           <a class="header__link-number visible-mobile" href="tel:+78123363636"
             >(812) 336 36 36</a
@@ -73,8 +73,8 @@
                   id="name"
                   type="text"
                   placeholder="имя"
-                  required>
-
+                  required
+                />
               </label>
 
               <label class="form__label" for="birthday">
@@ -83,8 +83,7 @@
                   class="form__input form__input-data-birthday"
                   id="birthday"
                   type="date"
-                  placeholder="дата рождения">
-
+                />
               </label>
 
               <label class="form__label" for="gender">
@@ -107,11 +106,10 @@
                   id="password"
                   type="password"
                   placeholder="пароль"
-                  required>
-
+                  required
+                />
               </label>
             </fieldset>
-
             <fieldset class="form__contacts">
               <label class="form__label" for="email">
                 <span>*</span> email
@@ -120,8 +118,8 @@
                   id="email"
                   type="email"
                   placeholder="email"
-                  required>
-
+                  required
+                />
               </label>
               <label class="form__label" for="number">
                 <span>*</span> номер телефона
@@ -130,8 +128,9 @@
                   type="tel"
                   id="number"
                   placeholder="номер телефона"
-                  required>
-
+                  pattern="\+?[0-9\s\-\(\)]+"
+                  required
+                />
               </label>
               <label class="form__label" for="day">
                 <span>*</span> удобный интервал для связи
@@ -139,23 +138,121 @@
                   name="day"
                   id="day"
                   class="form__select form__select-gender"
-                  required>
-                    <option value=""
-                            disabled
-                            selected>
-                      Удобный интервал для связи
-                    </option>
-                    <option value="утро">Утро</option>
-                    <option value="день">день</option>
-                    <option value="вечер">вечер</option>
-                    <option value="ночь">ночь</option>
+                  required
+                >
+                  <option value="" disabled selected>
+                    Удобный интервал для связи
+                  </option>
+                  <option value="утро">Утро</option>
+                  <option value="день">день</option>
+                  <option value="вечер">вечер</option>
+                  <option value="ночь">ночь</option>
                 </select>
               </label>
             </fieldset>
             <div class="form__buttons">
-              <button class="form__button" type="reset" role="button" tabindex="0" aria-label="Сбросить выбор">Сбросить выбор</button>
-              <button class="form__button" type="submit" role="button" tabindex="0" aria-label="Отправить">Отправить</button>
+              <button class="form__button" type="reset">Сбросить выбор</button>
+              <button class="form__button" type="submit">Отправить</button>
             </div>
+          </form>
+        </div>
+        <div class="second_task__wrapper">
+          <dl>
+            <dt>Псевдоэлемент</dt>
+            <dd>
+              Селектор, который позволяет стилизовать определенную часть
+              элемента, а не сам элемент в целом.
+            </dd>
+
+            <dt>Псевдокласс</dt>
+            <dd>
+              Селектор, который применяется к элементам на основе их состояния
+              или взаимодействия с пользователем
+            </dd>
+          </dl>
+          <form class="second_task">
+            <fieldset class="pseudo-element">
+              <legend>Выберите псевдоэлементы</legend>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="before"
+                  name="pseudo-element"
+                  checked=""
+                  class="input_2"
+                />
+                <label for="before"> ::before </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="after"
+                  name="pseudo-element"
+                  class="input_2"
+                />
+                <label for="after"> ::after </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="first-letter"
+                  name="pseudo-element"
+                  checked=""
+                  class="input_2"
+                />
+                <label for="first-letter"> ::first-letter </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="first-line"
+                  name="pseudo-element"
+                  class="input_2"
+                />
+                <label for="first-line"> ::first-line </label>
+              </div>
+            </fieldset>
+            <fieldset class="pseudo-class">
+              <legend>Выберите псевдоклассы</legend>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="hover"
+                  name="pseudo-class"
+                  checked=""
+                  class="input_2"
+                />
+                <label for="hover"> :hover </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="focus"
+                  name="pseudo-class"
+                  class="input_2"
+                />
+                <label for="focus"> :focus </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="active"
+                  name="pseudo-class"
+                  checked=""
+                  class="input_2"
+                />
+                <label for="active"> :active </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="visited"
+                  name="pseudo-class"
+                  class="input_2"
+                />
+                <label for="visited"> :visited </label>
+              </div>
+            </fieldset>
           </form>
         </div>
       </section>
@@ -166,9 +263,9 @@
         <picture>
           <source
             srcset="./images/footer-big.png"
-            media="(min-width: 1281px)">
-
-          <img class="footer__image-map" src="./images/footer.png" alt="map">
+            media="(min-width: 1281px)"
+          />
+          <img class="footer__image-map" src="./images/footer.png" alt="map" />
         </picture>
 
         <div class="footer__container">
@@ -176,8 +273,8 @@
             <img
               class="footer__image-locator"
               src="./icons/locator.svg"
-              alt="locator">
-
+              alt="locator"
+            />
             <p class="footer__info">Екатеринбург, ул.Маршала Жукова, дом 12</p>
           </div>
           <ul class="footer__list">
@@ -186,24 +283,24 @@
                 <img
                   class="footer__image"
                   src="./icons/facebook.svg"
-                  alt="facebook">
-              </a>
+                  alt="facebook"
+              /></a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
                 <img
                   class="footer__image"
                   src="./icons/instagramm.svg"
-                  alt="instagramm">
-              </a>
+                  alt="instagramm"
+              /></a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">
                 <img
                   class="footer__image"
                   src="./icons/youtube.svg"
-                  alt="youtube">
-              </a>
+                  alt="youtube"
+              /></a>
             </li>
           </ul>
           <ul class="footer__contacts-list contacts">
@@ -212,8 +309,8 @@
                 <img
                   class="contacts__image"
                   src="./icons/watsup.svg"
-                  alt="watsap">
-
+                  alt="watsap"
+                />
               </a>
             </li>
             <li class="contacts__contact">
@@ -221,14 +318,14 @@
                 <img
                   class="contacts__image"
                   src="./icons/telegramm.svg"
-                  alt="telegramm">
-
+                  alt="telegramm"
+                />
               </a>
             </li>
             <li class="contacts__contact">
               <a class="contacts__link-number" href="tel:+78123363636"
-                >+7(812) 336 36 36</a>
-
+                >+7(812) 336 36 36</a
+              >
             </li>
           </ul>
         </div>
@@ -242,8 +339,8 @@
                 type="email"
                 name="email"
                 placeholder="Электронная почта"
-                required>
-
+                required
+              />
               <button class="newsletter__button" type="submit">
                 Подписаться
               </button>
@@ -251,11 +348,13 @@
           </div>
           <div class="footer__link-policy">
             <a class="footer__link-policy-link" href="#"
-              >Политика конфидециальности</a>
-
+              >Политика конфидециальности</a
+            >
             <a href="./grid.html" class="footer__gtid">GRID</a>
+            <a href="./demo.html" class="footer__gtid">DEMO</a>
           </div>
         </div>
+        <img class="footer__logo" src="./icons/logo.svg" alt="logo" />
       </div>
     </footer>
   </body>

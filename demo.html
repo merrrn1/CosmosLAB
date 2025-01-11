@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
       <div class="header__inner container">
-        <a class="header__link" href="./index.html">
+        <a class="header__link" href="/index.html">
           <img class="header__image" src="./icons/logo.svg" alt="logo" />
           <img class="header__image" src="./icons/Celestia.svg" alt="logo" />
         </a>
         <nav class="header__navigation visible-desktop-above">
           <ul class="header__list">
             <li class="header__item">
-              <a href="./index.html" class="header__item">Главная</a>
+              <a href="/index.html" class="header__item">Главная</a>
             </li>
             <li class="header__item">
               <a href="#" class="header__item">События</a>
@@ -61,102 +61,32 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <section class="grid orange">
-        <h1 class="grid__title">Grid table</h1>
-        <div class="grid__inner container">
-          <div class="grid__elem-1 white">1</div>
-          <div class="grid__elem-2 yellow">2</div>
-          <div class="grid__elem-3 red">3</div>
-          <div class="grid__elem-4 yellow">4</div>
-          <div class="grid__elem-5 white">5</div>
-          <div class="grid__elem-6 white">6</div>
-          <div class="grid__elem-7 black">7</div>
-          <div class="grid__elem-8 white">8</div>
-          <div class="grid__elem-9 white">9</div>
-        </div>
-      </section>
-      <section class="grafics">
-        <div class="grafics__inner">
-          <div class="grafics__header">
-            <h2 class="grafics__title">Grid grafics</h2>
-            <nav class="grafics__navigation">
-              <ul class="grafics__list">
-                <li class="grafics__item">
-                  <a href="#" class="grafics__link"> ссылка 1 </a>
-                </li>
-                <li class="grafics__item">
-                  <a href="#" class="grafics__link"> ссылка 2 </a>
-                </li>
-                <li class="grafics__item">
-                  <a href="#" class="grafics__link"> ссылка 3 </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="grafics__grid">
-            <div class="grafics__elem-1">
-              <img
-                src="./images/grid/1.png"
-                alt="grafic1"
-                class="grafics__image"
-              />
+    <main class="content">
+      <section class="animation">
+        <div class="animation__wrapper container">
+          <div class="animation__card">
+            <div class="animation__front">
+              <p class="animation__text">front</p>
             </div>
-            <div class="grafics__elem-2">
-              <img
-                src="./images/grid/2.png"
-                alt="grafic2"
-                class="grafics__image"
-              />
-            </div>
-            <div class="grafics__elem-3">
-              <img
-                src="./images/grid/3.png"
-                alt="grafic3"
-                class="grafics__image"
-              />
-            </div>
-            <div class="grafics__elem-4">
-              <img
-                src="./images/grid/4.png"
-                alt="grafic4"
-                class="grafics__image"
-              />
-            </div>
-            <div class="grafics__elem-5">
-              <img
-                src="./images/grid/5.png"
-                alt="grafic5"
-                class="grafics__image"
-              />
-            </div>
-            <div class="grafics__elem-6">
-              <img
-                src="./images/grid/6.png"
-                alt="grafic6"
-                class="grafics__image"
-              />
+            <div class="animation__back">
+              <p class="animation__text">back</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="galery">
-        <div class="galery__inner container">
-          <div class="galery__elem-1">
-            <a href="#" class="galery__link">ссылка</a>
-          </div>
-          <div class="galery__elem-2">
-            <a href="#" class="galery__link">ссылка</a>
-          </div>
-          <div class="galery__elem-3">
-            <a href="#" class="galery__link">ссылка</a>
-          </div>
-          <div class="galery__elem-4">
-            <a href="#" class="galery__link">ссылка</a>
-          </div>
-          <div class="galery__elem-5">
-            <a href="#" class="galery__link">ссылка</a>
-          </div>
+      <section class="line">
+        <div class="line__wrapper container">
+          <ul class="line__list">
+            <li class="line__item line__item-1"></li>
+            <li class="line__item line__item-2"></li>
+            <li class="line__item line__item-3"></li>
+            <li class="line__item line__item-4"></li>
+
+            <li class="line__item line__item-1"></li>
+            <li class="line__item line__item-2"></li>
+            <li class="line__item line__item-3"></li>
+            <li class="line__item line__item-4"></li>
+          </ul>
         </div>
       </section>
     </main>
@@ -168,7 +98,11 @@
             srcset="./images/footer-big.png"
             media="(min-width: 1281px)"
           />
-          <img class="footer__image-map" src="./images/footer.png" alt="map" />
+          <img
+            class="footer__image-map"
+            src="./images/footerloc.png"
+            alt="map"
+          />
         </picture>
 
         <div class="footer__container">
@@ -253,6 +187,8 @@
             <a class="footer__link-policy-link" href="#"
               >Политика конфидециальности</a
             >
+            <a href="./grid.html" class="footer__gtid">GRID</a>
+            <a href="./demo.html" class="footer__gtid">DEMO</a>
           </div>
         </div>
       </div>

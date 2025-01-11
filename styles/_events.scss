@@ -33,6 +33,7 @@
 
   &__image {
     border-radius: 50px;
+    width: 100%;
     @include mobile-above {
       width: 313px;
     }
@@ -129,8 +130,9 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 140%;
-      color: var(--color-white-alternetive);
-      margin-right: 10px;
+      color: var(--color-white);
+      margin-right: 7px;
+      border-color: var(--color-white);
     }
 
     &-showmore {
@@ -302,6 +304,14 @@
     flex-direction: column;
     @include mobile-s-above {
       justify-content: center;
+      align-items: center;
+    }
+
+    @include mobile-above {
+      align-items: start;
+    }
+
+    @include desktop-above {
       align-items: center;
     }
   }
